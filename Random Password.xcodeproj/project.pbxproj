@@ -13,6 +13,7 @@
 		ACA219282662DA8300A0F85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA219272662DA8300A0F85C /* Assets.xcassets */; };
 		ACA2192B2662DA8300A0F85C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA2192A2662DA8300A0F85C /* Preview Assets.xcassets */; };
 		ACA2192E2662DA8300A0F85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA2192C2662DA8300A0F85C /* LaunchScreen.storyboard */; };
+		ACA219392662DFA600A0F85C /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA219382662DFA600A0F85C /* Password.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ACA2192A2662DA8300A0F85C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACA2192D2662DA8300A0F85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACA2192F2662DA8300A0F85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA219382662DFA600A0F85C /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,11 @@
 		ACA219202662DA8200A0F85C /* Random Password */ = {
 			isa = PBXGroup;
 			children = (
+				ACA219372662DF7D00A0F85C /* controller */,
+				ACA219362662DF7400A0F85C /* view */,
+				ACA219352662DF6A00A0F85C /* model */,
 				ACA219212662DA8200A0F85C /* AppDelegate.swift */,
 				ACA219232662DA8200A0F85C /* SceneDelegate.swift */,
-				ACA219252662DA8200A0F85C /* ContentView.swift */,
 				ACA219272662DA8300A0F85C /* Assets.xcassets */,
 				ACA2192C2662DA8300A0F85C /* LaunchScreen.storyboard */,
 				ACA2192F2662DA8300A0F85C /* Info.plist */,
@@ -73,6 +77,29 @@
 				ACA2192A2662DA8300A0F85C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACA219352662DF6A00A0F85C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ACA219382662DFA600A0F85C /* Password.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACA219362662DF7400A0F85C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ACA219252662DA8200A0F85C /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ACA219372662DF7D00A0F85C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA219392662DFA600A0F85C /* Password.swift in Sources */,
 				ACA219222662DA8200A0F85C /* AppDelegate.swift in Sources */,
 				ACA219242662DA8200A0F85C /* SceneDelegate.swift in Sources */,
 				ACA219262662DA8200A0F85C /* ContentView.swift in Sources */,
