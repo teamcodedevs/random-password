@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var passwordData = PasswordData()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        SliderComponent(passwordData: passwordData)
     }
 }
 

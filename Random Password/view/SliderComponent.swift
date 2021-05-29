@@ -8,26 +8,24 @@
 import SwiftUI
 
 struct SliderComponent: View {
-    @State private var sliderValue: Double = 4
-    @State private var isEditing = false
+    @ObservedObject var passwordData: PasswordData
     
     var body: some View {
         VStack(alignment: .leading){
-            Text("LENGTH \(sliderValue)").foregroundColor(Color(hex: 0x525f83))
+            Text("LENGTH \(Int(passwordData.sliderValue))")
+                .foregroundColor(Color(hex: 0x525f83))
             VStack(alignment: .leading, spacing: 12){
-                Slider(
-                    value: $sliderValue,
-                    in: 4...100
-                )
-            }
-            .padding()
+                HStack{
+                    Text("4").foregroundColor(Color(hex: 0x525f83))
+                    Slider(
+                        value: $passwordData.sliderValue,
+                        in: 4...40
+                    )
+                    Text("40").foregroundColor(Color(hex: 0x525f83))
+                }
+            }.padding(15)
             .background(Color(hex: 0x040f2c))
-        }
-    }
-}
-
-struct Slider_Previews: PreviewProvider {
-    static var previews: some View {
-        SliderComponent()
+            .cornerRadius(10.0)
+        }.padding()
     }
 }
