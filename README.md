@@ -1,6 +1,6 @@
 # random-password
 
-This project is a random password using SwiftUI. 
+This project is a random password generator using SwiftUI. 
 
 ## Goal
 
