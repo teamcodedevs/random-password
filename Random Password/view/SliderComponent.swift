@@ -12,8 +12,10 @@ struct SliderComponent: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            Text("LENGTH \(Int(passwordData.sliderValue))")
+            Text("LENGTH: \(Int(passwordData.sliderValue))")
                 .foregroundColor(Color(hex: 0x525f83))
+                .font(.caption)
+                .fontWeight(.semibold)
             VStack(alignment: .leading, spacing: 12){
                 HStack{
                     Text("4").foregroundColor(Color(hex: 0x525f83))
@@ -23,9 +25,9 @@ struct SliderComponent: View {
                     )
                     Text("40").foregroundColor(Color(hex: 0x525f83))
                 }
-            }.padding(15)
-            .background(Color(hex: 0x040f2c))
+            }.padding(.all, 20)
+            .background(Color(hex: 0x091742))
             .cornerRadius(10.0)
-        }.padding()
+        }.frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
 }
