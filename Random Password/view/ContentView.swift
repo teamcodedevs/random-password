@@ -11,7 +11,13 @@ struct ContentView: View {
     @StateObject var passwordData = PasswordData()
     
     var body: some View {
-        SliderComponent(passwordData: passwordData)
+        ZStack {
+            Color(hex: 0x040f2c).ignoresSafeArea()
+            VStack{
+                PasswordText()
+                SliderComponent(passwordData: passwordData)
+            }.padding()
+        }
     }
 }
 
