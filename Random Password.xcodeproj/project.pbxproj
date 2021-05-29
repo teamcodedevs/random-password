@@ -17,6 +17,7 @@
 		ACA219392662DFA600A0F85C /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA219382662DFA600A0F85C /* Password.swift */; };
 		ACA2193B2662E5FE00A0F85C /* SliderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2193A2662E5FE00A0F85C /* SliderComponent.swift */; };
 		ACEBCB9D2662EDB40073CB7F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEBCB9C2662EDB40073CB7F /* UIColor.swift */; };
+		ACEBCB9F2662F8FB0073CB7F /* PasswordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEBCB9E2662F8FB0073CB7F /* PasswordData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		ACA219382662DFA600A0F85C /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		ACA2193A2662E5FE00A0F85C /* SliderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderComponent.swift; sourceTree = "<group>"; };
 		ACEBCB9C2662EDB40073CB7F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		ACEBCB9E2662F8FB0073CB7F /* PasswordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		ACA219372662DF7D00A0F85C /* store */ = {
 			isa = PBXGroup;
 			children = (
+				ACEBCB9E2662F8FB0073CB7F /* PasswordData.swift */,
 			);
 			path = store;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				ACA219262662DA8200A0F85C /* ContentView.swift in Sources */,
 				2C5052CF2662E99900A27542 /* PasswordText.swift in Sources */,
 				ACA2193B2662E5FE00A0F85C /* SliderComponent.swift in Sources */,
+				ACEBCB9F2662F8FB0073CB7F /* PasswordData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
