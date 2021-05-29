@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5052CF2662E99900A27542 /* PasswordText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5052CE2662E99900A27542 /* PasswordText.swift */; };
 		ACA219222662DA8200A0F85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA219212662DA8200A0F85C /* AppDelegate.swift */; };
 		ACA219242662DA8200A0F85C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA219232662DA8200A0F85C /* SceneDelegate.swift */; };
 		ACA219262662DA8200A0F85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA219252662DA8200A0F85C /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C5052CE2662E99900A27542 /* PasswordText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordText.swift; sourceTree = "<group>"; };
 		ACA2191E2662DA8200A0F85C /* Random Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA219212662DA8200A0F85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA219232662DA8200A0F85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5052CD2662E95D00A27542 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				2C5052CE2662E99900A27542 /* PasswordText.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		ACA219152662DA8200A0F85C = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		ACA219362662DF7400A0F85C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				2C5052CD2662E95D00A27542 /* components */,
 				ACA219252662DA8200A0F85C /* ContentView.swift */,
 			);
 			path = view;
@@ -176,6 +187,7 @@
 				ACA219222662DA8200A0F85C /* AppDelegate.swift in Sources */,
 				ACA219242662DA8200A0F85C /* SceneDelegate.swift in Sources */,
 				ACA219262662DA8200A0F85C /* ContentView.swift in Sources */,
+				2C5052CF2662E99900A27542 /* PasswordText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
