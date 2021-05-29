@@ -15,6 +15,8 @@
 		ACA2192B2662DA8300A0F85C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA2192A2662DA8300A0F85C /* Preview Assets.xcassets */; };
 		ACA2192E2662DA8300A0F85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA2192C2662DA8300A0F85C /* LaunchScreen.storyboard */; };
 		ACA219392662DFA600A0F85C /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA219382662DFA600A0F85C /* Password.swift */; };
+		ACA2193B2662E5FE00A0F85C /* SliderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2193A2662E5FE00A0F85C /* SliderComponent.swift */; };
+		ACEBCB9D2662EDB40073CB7F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEBCB9C2662EDB40073CB7F /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		ACA2192D2662DA8300A0F85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACA2192F2662DA8300A0F85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA219382662DFA600A0F85C /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		ACA2193A2662E5FE00A0F85C /* SliderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderComponent.swift; sourceTree = "<group>"; };
+		ACEBCB9C2662EDB40073CB7F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		ACA219202662DA8200A0F85C /* Random Password */ = {
 			isa = PBXGroup;
 			children = (
+				ACEBCB9B2662ED9D0073CB7F /* helpers */,
 				ACA219372662DF7D00A0F85C /* store */,
 				ACA219362662DF7400A0F85C /* view */,
 				ACA219352662DF6A00A0F85C /* model */,
@@ -100,8 +105,9 @@
 		ACA219362662DF7400A0F85C /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2C5052CD2662E95D00A27542 /* components */,
 				ACA219252662DA8200A0F85C /* ContentView.swift */,
+				2C5052CE2662E99900A27542 /* PasswordText.swift */,
+				ACA2193A2662E5FE00A0F85C /* SliderComponent.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -111,6 +117,14 @@
 			children = (
 			);
 			path = store;
+			sourceTree = "<group>";
+		};
+		ACEBCB9B2662ED9D0073CB7F /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ACEBCB9C2662EDB40073CB7F /* UIColor.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA219392662DFA600A0F85C /* Password.swift in Sources */,
+				ACEBCB9D2662EDB40073CB7F /* UIColor.swift in Sources */,
 				ACA219222662DA8200A0F85C /* AppDelegate.swift in Sources */,
 				ACA219242662DA8200A0F85C /* SceneDelegate.swift in Sources */,
 				ACA219262662DA8200A0F85C /* ContentView.swift in Sources */,
 				2C5052CF2662E99900A27542 /* PasswordText.swift in Sources */,
+				ACA2193B2662E5FE00A0F85C /* SliderComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
