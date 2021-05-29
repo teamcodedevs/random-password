@@ -58,7 +58,7 @@
 		ACA219202662DA8200A0F85C /* Random Password */ = {
 			isa = PBXGroup;
 			children = (
-				ACA219372662DF7D00A0F85C /* controller */,
+				ACA219372662DF7D00A0F85C /* store */,
 				ACA219362662DF7400A0F85C /* view */,
 				ACA219352662DF6A00A0F85C /* model */,
 				ACA219212662DA8200A0F85C /* AppDelegate.swift */,
@@ -95,11 +95,11 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		ACA219372662DF7D00A0F85C /* controller */ = {
+		ACA219372662DF7D00A0F85C /* store */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = controller;
+			path = store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
