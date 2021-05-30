@@ -12,11 +12,13 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color(hex: 0x040f2c).ignoresSafeArea()
+            Color.background.ignoresSafeArea()
             VStack{
                 PasswordText()
                 SliderComponent(passwordData: passwordData)
                 SwitchComponent()
+                Spacer()
+                ButtonView()
             }.padding()
         }
     }

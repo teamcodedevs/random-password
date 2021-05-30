@@ -12,20 +12,22 @@ struct SliderComponent: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            Text("LENGTH \(Int(passwordData.sliderValue))")
-                .foregroundColor(Color(hex: 0x525f83))
+            Text("LENGTH: \(Int(passwordData.sliderValue))")
+                .foregroundColor(Color.label)
+                .font(.caption)
+                .fontWeight(.semibold)
             VStack(alignment: .leading, spacing: 12){
                 HStack{
-                    Text("4").foregroundColor(Color(hex: 0x525f83))
+                    Text("4").foregroundColor(.white)
                     Slider(
                         value: $passwordData.sliderValue,
                         in: 4...40
                     )
-                    Text("40").foregroundColor(Color(hex: 0x525f83))
+                    Text("40").foregroundColor(.white)
                 }
-            }.padding(15)
-            .background(Color(hex: 0x040f2c))
+            }.padding(.all, 20)
+            .background(Color.card)
             .cornerRadius(10.0)
-        }.padding()
+        }.frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
 }
