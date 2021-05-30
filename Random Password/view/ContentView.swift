@@ -16,6 +16,8 @@ struct ContentView: View {
             VStack{
                 PasswordText()
                 SliderComponent(passwordData: passwordData)
+                Spacer()
+                ButtonView()
             }.padding()
         }
     }
