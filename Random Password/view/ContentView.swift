@@ -18,7 +18,7 @@ struct ContentView: View {
                 SliderComponent(passwordData: passwordData)
                 SwitchComponent(passwordData: passwordData)
                 Spacer()
-                ButtonView()
+                ButtonView(passwordData: passwordData)
             }.padding()
         }
     }
