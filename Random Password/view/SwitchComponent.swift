@@ -8,35 +8,53 @@
 import SwiftUI
 
 
-struct switchComponent: View {
+struct SwitchComponent: View {
     @State private var show = true
     var body: some View {
-        VStack (alignment: .leading, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/){
+        VStack (alignment: .leading, spacing: nil){
             Text("Settings")
-                .padding(10)
-            List(){
-                VStack{
+                .font(.caption)
+                .fontWeight(.semibold)
+                .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+                .foregroundColor(Color(hex: 0x525f83))
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+                VStack (alignment: .leading, spacing: 30){
                     Toggle(isOn: $show) {
-                       Text("Include number")
+                        Text("Include number")
+                            .foregroundColor(.white)
                     }
-                }
-                VStack {
+                    .toggleStyle(SwitchToggleStyle(tint: Color(hex: 0x167af5)))
+                    
+                }.padding(15)
+                .background(Color(hex: 0x091742))
+                .cornerRadius(10.0)
+                VStack (alignment: .leading, spacing: 30){
                     Toggle(isOn: $show) {
-                       Text("Include letters")
+                        Text("Include letters")
+                            .foregroundColor(.white)
                     }
-                }
-                VStack {
+                    .toggleStyle(SwitchToggleStyle(tint: Color(hex: 0x167af5)))
+                    
+                }.padding(15)
+                .background(Color(hex: 0x091742))
+                .cornerRadius(10.0)
+                VStack (alignment: .leading, spacing: 30){
                     Toggle(isOn: $show) {
-                       Text("Include symbols")
+                        Text("Include symbols")
+                            .foregroundColor(.white)
                     }
-                }
-            }
+                    .toggleStyle(SwitchToggleStyle(tint: Color(hex: 0x167af5)))
+    
+                }.padding(15)
+                .background(Color(hex: 0x091742))
+                .cornerRadius(10.0)
         }
     }
 }
 
-struct switchComponent_Previews: PreviewProvider {
+struct SwitchComponent_Previews: PreviewProvider {
     static var previews: some View {
-        switchComponent()
+        SwitchComponent()
     }
 }
