@@ -16,7 +16,7 @@ struct SwitchComponent: View {
                 .font(.caption)
                 .fontWeight(.semibold)
                 .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
-                .foregroundColor(Color(hex: 0x525f83))
+                .foregroundColor(Color.label)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
                 VStack (alignment: .leading, spacing: 30){
@@ -24,30 +24,30 @@ struct SwitchComponent: View {
                         Text("Include number")
                             .foregroundColor(.white)
                     }
-                    .toggleStyle(SwitchToggleStyle(tint: Color(hex: 0x167af5)))
+                    .toggleStyle(SwitchToggleStyle(tint: Color.primary))
                     
                 }.padding(15)
-                .background(Color(hex: 0x091742))
+                .background(Color.card)
                 .cornerRadius(10.0)
                 VStack (alignment: .leading, spacing: 30){
                     Toggle(isOn: $show) {
                         Text("Include letters")
                             .foregroundColor(.white)
                     }
-                    .toggleStyle(SwitchToggleStyle(tint: Color(hex: 0x167af5)))
+                    .toggleStyle(SwitchToggleStyle(tint: Color.primary))
                     
                 }.padding(15)
-                .background(Color(hex: 0x091742))
+                .background(Color.card)
                 .cornerRadius(10.0)
                 VStack (alignment: .leading, spacing: 30){
                     Toggle(isOn: $show) {
                         Text("Include symbols")
                             .foregroundColor(.white)
                     }
-                    .toggleStyle(SwitchToggleStyle(tint: Color(hex: 0x167af5)))
+                    .toggleStyle(SwitchToggleStyle(tint: Color.primary))
     
                 }.padding(15)
-                .background(Color(hex: 0x091742))
+                .background(Color.card)
                 .cornerRadius(10.0)
         }
     }
