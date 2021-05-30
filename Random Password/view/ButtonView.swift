@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ButtonView: View {
+    @ObservedObject var passwordData: PasswordData
     var body: some View {
-        Button(action: { print("refreshed") }){
+        Button(action: passwordData.refreshPressed ){
             Text("Refresh")
                 .font(.body)
                 .fontWeight(.semibold)
@@ -22,11 +23,5 @@ struct ButtonView: View {
             .cornerRadius(10)
         
         
-    }
-}
-
-struct ButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonView()
     }
 }

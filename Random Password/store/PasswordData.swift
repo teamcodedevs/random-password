@@ -13,4 +13,12 @@ class PasswordData: ObservableObject {
     @Published var hasNumber: Bool = false
     @Published var hasLetter: Bool = false
     @Published var hasSymbols: Bool = false
+    
+    
+    func refreshPressed(){
+       print("Slider Value \(Int(sliderValue))")
+       print("Include Number \(hasNumber)")
+       print("Include Letter \(hasLetter)")
+       print("Include Symbols \(hasSymbols)")
+    }
 }
