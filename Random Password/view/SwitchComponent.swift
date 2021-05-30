@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct SwitchComponent: View {
-    @State private var show = true
+    @ObservedObject var passwordData: PasswordData
     var body: some View {
         VStack (alignment: .leading, spacing: nil){
             Text("Settings")
@@ -20,7 +20,7 @@ struct SwitchComponent: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             
                 VStack (alignment: .leading, spacing: 30){
-                    Toggle(isOn: $show) {
+                    Toggle(isOn: $passwordData.hasNumber) {
                         Text("Include number")
                             .foregroundColor(.white)
                     }
@@ -30,7 +30,7 @@ struct SwitchComponent: View {
                 .background(Color.card)
                 .cornerRadius(10.0)
                 VStack (alignment: .leading, spacing: 30){
-                    Toggle(isOn: $show) {
+                    Toggle(isOn: $passwordData.hasLetter) {
                         Text("Include letters")
                             .foregroundColor(.white)
                     }
@@ -40,7 +40,7 @@ struct SwitchComponent: View {
                 .background(Color.card)
                 .cornerRadius(10.0)
                 VStack (alignment: .leading, spacing: 30){
-                    Toggle(isOn: $show) {
+                    Toggle(isOn: $passwordData.hasSymbols) {
                         Text("Include symbols")
                             .foregroundColor(.white)
                     }
@@ -50,11 +50,5 @@ struct SwitchComponent: View {
                 .background(Color.card)
                 .cornerRadius(10.0)
         }
-    }
-}
-
-struct SwitchComponent_Previews: PreviewProvider {
-    static var previews: some View {
-        SwitchComponent()
     }
 }

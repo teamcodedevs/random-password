@@ -9,4 +9,8 @@ import Foundation
 
 class PasswordData: ObservableObject {
     @Published var sliderValue: Double = 4
+    @Published var password: String = "cUvwjH0f#4@V"
+    @Published var hasNumber: Bool = false
+    @Published var hasLetter: Bool = false
+    @Published var hasSymbols: Bool = false
 }

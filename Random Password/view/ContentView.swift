@@ -14,9 +14,9 @@ struct ContentView: View {
         ZStack {
             Color.background.ignoresSafeArea()
             VStack{
-                PasswordText()
+                PasswordText(passwordData: passwordData)
                 SliderComponent(passwordData: passwordData)
-                SwitchComponent()
+                SwitchComponent(passwordData: passwordData)
                 Spacer()
                 ButtonView()
             }.padding()

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PasswordText: View {
+    @ObservedObject var passwordData: PasswordData
     var body: some View {
         VStack {
             Text("Generated Password")
@@ -17,7 +18,7 @@ struct PasswordText: View {
                 .foregroundColor(Color.label)
                 .frame(maxWidth: .infinity, alignment: .leading)
             ZStack {
-                Text("cUvwjH0f#4@V")
+                Text(passwordData.password)
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.white)
             }
@@ -27,11 +28,5 @@ struct PasswordText: View {
             .background(Color.card)
             .cornerRadius(10)
         }
-    }
-}
-
-struct PasswordText_Previews: PreviewProvider {
-    static var previews: some View {
-        PasswordText()
     }
 }
