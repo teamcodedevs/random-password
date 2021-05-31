@@ -8,21 +8,20 @@
 import Foundation
 
 struct PasswordGenerator {
+    
+    let password: Password = Password()
+    
     func generate(_ length: Int, _ hasLetter: Bool, _ hasNumber: Bool, _ hasSymbol: Bool) -> String {
-        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        let numbers = "0123456789"
-        let symbols = "!@#$%^&*_-+=?<>:;(){}|\\/"
-        
         var characters = ""
         
         if hasLetter {
-            characters += letters
+            characters += password.letters
         }
         if hasNumber {
-            characters += numbers
+            characters += password.numbers
         }
         if hasSymbol {
-            characters += symbols
+            characters += password.symbols
         }
         
         let randomCharacters = (0..<length).map{_ in characters.randomElement()!}

@@ -8,8 +8,7 @@
 import Foundation
 
 struct Password {
-    let text: String;
-    let hasNumber: Bool;
-    let hasLetter: Bool;
-    let hasSymbols: Bool;
+    let letters: String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let numbers: String = "0123456789"
+    let symbols: String = "!@#$%^&*_-+=?<>:;(){}|\\/"
 }
